@@ -1,0 +1,26 @@
+# Managed by Copier. Do not edit by hand.
+# Run `copier update` to pull in template changes.
+_commit: 6e5047a
+_src_path: /home/user/kotlin-template
+agent_instructions: true
+agent_links:
+- claude
+- copilot
+author_name: Fiereu
+github_actions: true
+gradle_version: 9.6.1
+java_version: 25
+kotest_version: 6.1.4
+kotlin_convention: true
+kotlin_version: 2.4.0
+license: MIT
+module_name: core
+project_group: de.fiereu.lua
+project_layout: multi
+project_name: lua.kt
+sonarlint_convention: true
+sonarlint_version: 7.1.1
+spotless_convention: true
+spotless_version: 8.7.0
+test_framework: kotest
+

@@ -1,0 +1,18 @@
+[versions]
+kotlin = "2.4.0"
+kotest = "6.1.4"
+spotless = "8.7.0"
+sonarlint = "7.1.1"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+[libraries]
+# Used by buildSrc so convention plugins can apply the Kotlin Gradle plugin.
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+# Plugin marker, used by buildSrc so the convention can apply Spotless.
+spotless-gradle-plugin = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version.ref = "spotless" }
+# Plugin marker, used by buildSrc so the convention can apply SonarLint.
+sonarlint-gradle-plugin = { module = "name.remal.sonarlint:name.remal.sonarlint.gradle.plugin", version.ref = "sonarlint" }
